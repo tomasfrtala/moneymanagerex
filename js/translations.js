@@ -14,6 +14,11 @@
     "spanish": [{
         "Money Manager Ex User Manual":"Manual de usuario de Money Manager Ex"    
     }],
+    "german": [{
+        "Money Manager Ex User Manual":"Money Manager Ex-Benutzerhandbuch"
+        , "Contents": "Inhalt"
+        , "Introduction": "Einführung" 
+    }],
     "russian": [{
         "Money Manager Ex User Manual": "Руководство пользователя Money Manager Ex"
         , "Contents": "Содержание"
