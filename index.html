@@ -14,6 +14,24 @@
 </head>
 
 <body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
+
+    <script>
+        var lang = getParameterValue("lang").substring(0, 3);
+   	// Javascript URL redirection
+        if (lang == 'fre')
+            window.location.replace("index_fr.html");
+        else if (lang == 'ger')
+            window.location.replace("index_de.html");
+        else if (lang == 'hun')
+            window.location.replace("index_hu.html");
+        else if (lang == 'ita')
+            window.location.replace("index_it.html");
+        else if (lang == 'pol')
+            window.location.replace("index_pl.html");
+        else if (lang == 'spa')
+            window.location.replace("index_sp.html");
+    </script>
+    
     <a href="#" class="back-to-top"><img src="img/backtotop.png" alt="Back to Top" /></a>
     <!--Smooth Back to Top Button End-->
 
