@@ -11,12 +11,9 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
     <script src="js/back_to_top.js"></script>
     <link href="back_to_top.css" rel="stylesheet" type="text/css">
-</head>
-
-<body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
 
     <script>
-        var lang = getParameterValue("lang").substring(0, 3);
+        var lang = getParameterValue("lang").substring(0, 3).toLowerCase();
    	// Javascript URL redirection
         if (lang == 'fre')
             window.location.replace("index_fr.html");
@@ -31,6 +28,11 @@
         else if (lang == 'spa')
             window.location.replace("index_sp.html");
     </script>
+
+</head>
+
+<body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
+
     
     <a href="#" class="back-to-top"><img src="img/backtotop.png" alt="Back to Top" /></a>
     <!--Smooth Back to Top Button End-->
@@ -773,7 +775,6 @@
                 up on. Mark these as with status of flag for followup. This is
                 indicated in MMEX with a different icon.
             </p>
-
         </div>
         <div class="tips col-xs-6">
             <header class="i18n tips_header">Tip</header>
@@ -783,6 +784,12 @@
             </span>
         </div>
     </div>
+    <h3 class="i18n" id="trx_color">Custom Colors</h3>
+    <p>
+        <span class="i18n" id="trx_color1">The user can specify 7 custom colors in the color section of the options dialog.</span>
+        <span class="i18n" id="trx_color2">In the checking/term panel, pressing Ctrl+1 through Ctrl+7 sets the transaction entry color to the user specified custom color.</span>
+        <span class="i18n" id="trx_color3">Pressing Ctrl+0 will change it back to the mmex default transaction color.</span>
+    </p>
     <hr>
 
     <h2 class="i18n">Working with Currencies</h2>
@@ -847,7 +854,7 @@
                 currency to properly reflect the value at the base rate.
             </p>
             <p class="i18n" id="curr_58">
-                To allow Automatic Currency updates, the Currency Symbol needs
+                To allow Automatic Currency update, the Currency Symbol needs
                 to be set for the particular currency being used.
             </p>
             <p class="i18n" id="curr_59">

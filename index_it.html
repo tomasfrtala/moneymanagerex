@@ -10,11 +10,10 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
     <script src="js/back_to_top.js"></script>
     <link href="back_to_top.css" rel="stylesheet" type="text/css">
-</head>
-<body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
-    <script>
-        var lang = getParameterValue("lang").substring(0, 3);
-        // Javascript URL redirection
+
+	<script>
+        var lang = getParameterValue("lang").substring(0, 3).toLowerCase();
+   	// Javascript URL redirection
         if (lang == 'fre')
             window.location.replace("index_fr.html");
         else if (lang == 'ger')
@@ -27,7 +26,10 @@
             window.location.replace("index_pl.html");
         else if (lang == 'spa')
             window.location.replace("index_sp.html");
-    </script>
+    </script>	
+</head>
+
+<body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
 
     <a href="#" class="back-to-top"><img src="img/backtotop.png" alt="Back to Top" /></a>
     <!--Smooth Back to Top Button End-->
